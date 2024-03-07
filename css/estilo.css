@@ -1,0 +1,37 @@
+*{
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+ body{
+    margin: 0;
+ }
+header > img{
+    width: 100px;
+    
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+#menu{
+    display: flex;
+    /* flex-wrap: wrap; */
+    gap: 10px;
+    list-style: none;
+}
+
+#menu a{
+    /* remove o sublinhado do link */
+    text-decoration: none;
+    /* muda a cor do texto */
+    color: #000;
+    /* define o espaço interno do elemento */
+    padding: 8px 18px;
+    /* define o tamanho da fonte, e uma medida de fonte responsiva */
+    font-size: 1.3rem;
+}
