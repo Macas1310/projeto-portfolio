@@ -16,6 +16,7 @@ header{
     align-items: center;
     max-width: 1200px;
     margin: 0 auto;
+    padding: 35px 20px;
 }
 
 #menu{
@@ -35,3 +36,31 @@ header{
     /* define o tamanho da fonte, e uma medida de fonte responsiva */
     font-size: 1.3rem;
 }
+
+#perfil {
+    display: flex;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 35px 20px;
+    gap: 110px;
+    align-items: center;
+}
+
+#perfil-dados h1{
+    font-size: 4rem;
+    line-height: 1.4;
+}
+
+#perfil-dados h2{
+    margin-bottom: 0px;
+    padding-bottom: 0px;
+}
+
+#perfil-dados p{
+    margin-top: 0;
+    font-style: oblique;
+    color: #6e6d6e;
+}
+
+
+
