@@ -62,5 +62,22 @@ header{
     color: #6e6d6e;
 }
 
+#projetos{
+    display: flex;
+    max-width: 1200px;
+    margin: 0 auto;
+    gap: 110px;
+}
+
+#projetos h2{
+    font-size: 8rem;
+    line-height: 1;
+    text-transform: uppercase;
+    word-break: break-all;
+    max-width: 5ch;
+    color: #202D73;
+    
+}
+
 
 
