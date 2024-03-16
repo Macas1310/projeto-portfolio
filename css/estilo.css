@@ -147,6 +147,7 @@ header{
 
 /* sessao cursos - inicio */
 
+/* css cursos começo */
 #cursos{
     /* display: grid;
     grid-template-columns: 1fr 2fr; */
@@ -165,10 +166,79 @@ header{
 }
 
 #cursos-grid h2 {
-    color: #fff;
+    line-height: 1;
     font-size: 8rem;
+    color: #fff;
     word-break: break-all;
     max-width: 4ch;
     text-transform: uppercase;
 }
 
+#cursos-texto-principal {
+    color: gray;
+    padding: 20px;
+    gap: 20px;
+    border-radius: 4px;
+    margin-top: 110px;
+    font-size: 1.4rem;
+    
+}
+
+#cursos-lista{
+    flex: 1;
+    display: flex; 
+    flex-direction: column;
+    margin-top: 65px;
+    background: black;
+    padding: 20px;
+}
+
+#cursos-lista p{
+    
+    color: gray;
+    text-transform: uppercase;
+    margin-top: 15px;
+
+}
+
+#cursos-lista h3 {
+    color: white;
+    
+    
+}
+
+.cursos-destaque{
+    color: white;
+}
+
+#cursos-pai {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    /* flex-direction: column;  */
+    
+}
+
+#cursos-complementares p {
+    color: #696969;
+}
+
+#cursos-complementares-lista{
+    display: flex;
+    justify-content: space-between;
+    color: #fff;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* css cursos final */
