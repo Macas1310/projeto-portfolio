@@ -215,21 +215,36 @@ header{
     display: flex;
     gap: 20px;
     flex-wrap: wrap;
+    /* word-break: break-all; */
     /* flex-direction: column;  */
     
 }
 
-#cursos-complementares p {
+#cursos-complementares h5 {
     color: #696969;
 }
 
-#cursos-complementares-lista{
+.cursos-complementares-lista{
     display: flex;
     justify-content: space-between;
     color: #fff;
+    
+
+}
+
+#idiomas h5{
+    color: white;
 }
 
 
+.idioma-cor p {
+    color: white;
+}
+
+
+.medio-cor{
+    color: gray;
+}
 
 
 
