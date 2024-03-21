@@ -2,6 +2,11 @@
     box-sizing: border-box;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
+
+html{
+    scroll-behavior: smooth;
+}
+
  body{
     margin: 0;
  }
@@ -17,6 +22,7 @@ header{
     max-width: 1200px;
     margin: 0 auto;
     padding: 35px 20px;
+    min-height: 30vh;
 }
 
 #menu{
@@ -71,6 +77,7 @@ header{
     gap: 110px;
     grid-template-columns: 1fr 2fr;
     align-items: center;
+    min-height: 100vh;
 }
 
 #projetos h2{
@@ -97,7 +104,7 @@ header{
 }
 
 #projetos-lista{
-    background: #023e73;
+    background: #202D73;
     display: grid;
     grid-template-columns: 1fr 1fr;
     color: #fff;
@@ -137,7 +144,7 @@ header{
 
 #projetos-tags li{
     background-color: #fff;
-    color: #023e73;
+    color: #202D73;
     border-radius: 4px;
     padding: 5px 8px;
     line-height: 1.4;
@@ -151,8 +158,8 @@ header{
 #cursos{
     /* display: grid;
     grid-template-columns: 1fr 2fr; */
-    background-color: #023e73;
-    margin-top: 50px;
+    background-color: #202D73;
+    min-height: 100vh;
     /* height: 300px;
     margin-top: 50px; */
 }
@@ -163,6 +170,7 @@ header{
     max-width: 1200px;
     margin: 0 auto;
     gap: 110px;
+    align-items: center;
 }
 
 #cursos-grid h2 {
@@ -172,6 +180,7 @@ header{
     word-break: break-all;
     max-width: 4ch;
     text-transform: uppercase;
+    align-items: center;
 }
 
 #cursos-texto-principal {
@@ -245,15 +254,96 @@ header{
 .medio-cor{
     color: gray;
 }
-
-
-
-
-
-
-
-
-
-
-
 /* css cursos final */
+/* inicio css footer */
+
+footer {
+    /* background: #000; */
+    padding-top: 40px;
+    min-height: 100vh;
+}
+
+#footer-conteudo {
+    max-width: 1200px;
+    margin: 0 auto;
+    /* height: 400px;
+    background: #034f92; */
+}
+
+#form-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+#form-grid input,select{
+    width: 100%;
+    padding: 12px 20px;
+    border: 1px solid #202c73;
+    border-radius: 4px;
+}
+
+.btn-contato {
+    padding: 12px 20px;
+    background: #202D73;
+    color: #fff;
+    text-transform: uppercase;
+    margin: 20px 0px;
+    font-size: 1.3rem;
+    font-weight: bold;
+    border: none;
+    border-radius: 4px;
+}
+
+#footer-conteudo h2 {
+    font-size: 5rem;
+    text-transform: uppercase;
+    text-align: center;
+    color: #202D73;
+}
+
+#footer-inferior {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 20px;
+    text-align: center;
+    padding: 40px 0;
+}
+
+#footer-inferior a{
+    padding: 10px 0;
+    text-decoration: none;
+    color: #000;
+}
+
+#footer-inferior a:hover{
+    color: #000000c7;
+}
+
+.alinhar-centro {
+    text-align: center;
+}
+
+.alinhar-direita{
+    text-align: right;
+    
+}
+
+.alinhar-esquerda {
+    text-align: left;
+}
+
+
+
+#copy {
+    padding-top: 20px 0px;
+    text-align: center;
+}
+
+#form-grid option{
+    font-size: 1.2rem;
+}
+
+
+
+/* final css footer */
