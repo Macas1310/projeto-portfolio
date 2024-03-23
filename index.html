@@ -134,19 +134,24 @@
                 <h2>Contato</h2>
                 <form action="">
                     <div id="form-grid">
-                        <input type="text" name="nome" id="nome" placeholder="Nome"> 
-                        <input type="email" name="email" id="email" placeholder="E-mail">
+                        <input type="text" name="nome" id="nome" placeholder="Nome*"> 
+                        <input type="email" name="email" id="email" placeholder="E-mail*">
                         <input type="text" name="telefone" id="telefone" placeholder="Telefone">
                         <select name="tipo" id="tipo">
-                            <option value="Selecione" disabled selected>Selecione...</option>
+                            <option value="" disabled selected>Selecione...</option>
                             <option value="duvidas">Dúvidas</option>
                             <option value="servicos">Serviços</option>
-                            <option value="Sugestões">Sugestões</option>
-                            <option value="Contratar">Contratar</option>
+                            <option value="sugestões">Sugestões</option>
+                            <option value="contratar">Contratar</option>
 
                         </select>
                     </div>
-                        <button class="btn-contato" type="submit">Enviar</button>
+
+                    <textarea name="msg" id="msg" placeholder="Digite Aqui Sua Mensagem."></textarea>
+                
+                    <p id="form-aviso">* Campos Obrigatórios</p>
+
+                <button class="btn-contato" type="button" onclick="enviarContato()">Enviar</button>
                 </form>
 
                 <div id="footer-inferior">
@@ -175,5 +180,45 @@
             </div>
             
         </footer>
+
+    <script>
+        function enviarContato(){
+
+            let nome = document.getElementById('nome')
+
+            if(nome.value == ''){
+                nome.style.border = '1px solid red'
+            }else{
+                nome.style.border = '1px solid #202c73'
+
+            }
+          
+        
+            let email = document.getElementById('email')
+
+            if(email.value == ''){
+                email.style.border = '1px solid red'
+            }else{
+                email.style.border = '1px solid #202c73'
+
+            }
+           
+            if(tipo.value == ''){
+                tipo.style.border = '1px solid red'
+            }else{
+                tipo.style.border = '1px solid #202c73'
+            }
+
+
+
+
+
+        }
+
+    </script>
+
+
+
+
 </body>
 </html>
