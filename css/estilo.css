@@ -370,3 +370,145 @@ footer {
 
 }
 /* final css footer */
+
+/* inicio do CSS responsivo */
+/* o CSS inserido dentro @media abaixo, será carregado quando o dispositivo possuir tela com largura meno ou igual a 600px */
+/* Será o responsivo, desse código p/ cima é o DESKTOP */
+@media only screen and (max-width: 600px) {
+    header{
+        width: 100%;
+        flex-direction: column;
+        align-items: start;
+        padding: 10px;
+    }
+
+    header ul{
+        padding: 0;
+        margin: 0;
+    }
+
+    #menu{
+        
+        flex-direction: column;
+    }
+
+    #perfil{
+        width: 100%;
+        gap: 10px;
+        min-height: 400px;
+    }
+
+    #perfil-dados > h1{
+        font-size: 2.3rem;
+        max-width: 100%;
+    }
+
+    #perfil img{
+        width:100% ;
+    }
+
+    #projetos{
+        width: 100%;
+        gap: 0;
+        grid-template-columns: 1fr;
+    }
+
+    #projetos h2{
+        word-break: normal;
+        font-size: 4rem;
+        text-align: center;
+        max-width: 100%;
+    }
+
+    #projetos-geral{
+        padding: 10px;
+    }
+
+    #cursos h2 {
+        word-break: normal;
+        font-size: 4rem;
+        text-align: center;
+        max-width: 100%;
+    }
+
+
+    #cursos-grid {
+        width: 100%;
+        gap: 0;
+        grid-template-columns: 1fr;
+    }
+
+    #cursos-texto-principal {
+        padding: 10px;
+    }
+
+    #cursos-lista{
+        
+        padding: 5px;
+    }
+
+    #cursos-complementares, #idiomas {
+        padding: 10px;
+    }
+
+    #footer-conteudo {
+        width: 100%;
+        padding: 10px;
+    }
+
+    #form-grid input{
+        width: 100%;
+    }
+
+    #footer-conteudo h2{
+        font-size: 4rem;
+        text-align: center;
+        max-width: 100%;
+        letter-spacing: normal;
+    }
+
+    #footer-inferior {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+
+    .alinhhar-direita{
+        text-align: center;
+    }
+    .alinhar-centro{
+        text-align: center;
+
+    }
+
+    .alinhar-esquerda{
+        text-align: center;
+    }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* final do CSS Responsivo */
