@@ -132,7 +132,7 @@
         <footer id="contato">
             <div id="footer-conteudo">
                 <h2>Contato</h2>
-                <form action="">
+                <form action="" id="form">
                     <div id="form-grid">
                         <input type="text" name="nome" id="nome" placeholder="Nome*"> 
                         <input type="email" name="email" id="email" placeholder="E-mail*">
@@ -182,38 +182,48 @@
         </footer>
 
     <script>
-        function enviarContato(){
+    //    arrow function   
 
-            let nome = document.getElementById('nome')
+        const enviarContato = () => {
+            validaCampoVazio(nome)
+            validaCampoVazio(email) 
+            validaCampoVazio(telefone) 
+              
 
-            if(nome.value == ''){
-                nome.style.border = '1px solid red'
-            }else{
-                nome.style.border = '1px solid #202c73'
+            // se todos os campos estao preenchidos os dados sao enviados ao backend
+            if(nome.value != '' && email.value != '' && telefone.value != ''){
 
+                // aqui os dados sao enviados ao backend
+
+                // capture todos os dados do inputs do form para ser enviado ao backend
+                // serializacao dos dados
+                let dados = new FormData(form)
+
+                fetch('backend/contato.php',{
+                    method: 'POST',
+                    body: dados
+                })
+                .then(response=> response.json())
+                .then(dados=>)
             }
-          
-        
-            let email = document.getElementById('email')
-
-            if(email.value == ''){
-                email.style.border = '1px solid red'
-            }else{
-                email.style.border = '1px solid #202c73'
-
-            }
-           
-            if(tipo.value == ''){
-                tipo.style.border = '1px solid red'
-            }else{
-                tipo.style.border = '1px solid #202c73'
-            }
-
-
-
-
-
+            
         }
+
+
+
+
+
+
+
+
+
+    const validaCampoVazio = (campo) =>{
+        if(campo.value == ''){
+            campo.style.border = '1px solid red'
+        }else{
+            campo.style.border = '1px solid #202c73'
+        }
+    }
 
     </script>
 
