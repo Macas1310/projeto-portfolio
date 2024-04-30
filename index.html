@@ -181,7 +181,23 @@
             
         </footer>
 
+        <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+        <script src="js/inputmask/inputmask.min.js"></script>
+
+
     <script>
+        // mascara input telefone
+
+        Inputmask({
+            mask:["(99) 9999-9999","(99) 99999-9999"]
+        }).mask(telefone)
+
+
+
+
+
+
+
     //    arrow function   
 
         const enviarContato = () => {
@@ -203,8 +219,25 @@
                     method: 'POST',
                     body: dados
                 })
-                .then(response=> response.json())
-                .then(dados=>)
+                .then(response => response.json())
+                .then(dados =>{
+                    // resposta do backend
+                if(dados.STATUS == 0){
+                    Swal.fire({
+                        title:  'Atenção!',
+                        text:   dados.MSG,
+                        icon:   'error'
+                    })
+                }else{
+                    Swal.fire({
+                        title: 'Atenção',
+                        text: dados.MSG,
+                        icon: 'success'
+                    })
+                    form.reset()
+                }
+                    
+                })
             }
             
         }
